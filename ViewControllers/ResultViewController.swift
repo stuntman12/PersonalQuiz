@@ -9,11 +9,14 @@ import UIKit
 
 final class ResultViewController: UIViewController {
     
+    //MARK: - Outlet
     @IBOutlet weak var labelResult: UILabel!
     @IBOutlet weak var labelSubResult: UILabel!
     
+    //MARK: Property
     var answers: [Answer]!
     
+    //MARK: Override method
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -25,6 +28,7 @@ final class ResultViewController: UIViewController {
 
     }
     
+    //MARK: - Action
     @IBAction func doneButtonPressed(_ sender: UIBarButtonItem) {
         dismiss(animated: true)
     }
